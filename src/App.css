@@ -1,0 +1,12 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 5rem;
+}

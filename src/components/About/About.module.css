@@ -1,0 +1,101 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  /* background-color: aliceblue; */
+}
+.imageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -20%;
+  z-index: 1;
+}
+.robot {
+  width: 100%;
+  height: 100%;
+  /* background-color: #2f2f2f; */
+}
+.textContainer {
+  position: absolute;
+  margin-top: 15rem;
+  height: 100%;
+  width: 40%;
+  z-index: 1000;
+}
+.textContainer span {
+  color: rgb(190, 162, 70);
+  letter-spacing: 4px;
+}
+.textContainer p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 3rem;
+}
+
+.cvButton {
+  margin-top: 3rem;
+  letter-spacing: 4px;
+  color: rgb(190, 162, 70);
+  background: #2f2f2f;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 80%;
+  height: 4rem;
+}
+@media screen and (max-width: 1200px) {
+  .imageContainer {
+    margin-top: -5rem;
+  }
+  .textContainer {
+    width: 40%;
+  }
+  .textContainer span {
+    color: rgb(190, 162, 70);
+    letter-spacing: 4px;
+  }
+  .textContainer p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
+  .imageContainer {
+    position: static;
+    width: 200%;
+    margin-bottom: 5rem;
+  }
+  .textContainer {
+    margin-top: 0rem;
+    position: static;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContainer span {
+    width: 80%;
+  }
+  .textContainer p {
+    width: 80%;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 2rem;
+  }
+  .cvButton {
+    width: 80%;
+  }
+}
