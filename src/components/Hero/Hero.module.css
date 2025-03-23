@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  width: 90%;
+  justify-content: center;
+  width: 100%;
   margin-top: 5rem;
 }
 .imgContainer {
@@ -19,9 +20,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  /* background-color: aqua; */
 }
 .HeroText ul {
-  position: absolute;
+  /* position: absolute; */
   right: 3%;
   display: flex;
   flex-direction: column;
@@ -45,6 +47,7 @@
 }
 .innerContainer {
   width: 70%;
+  padding-left: 3rem;
 }
 .innerContainer span {
   color: rgb(190, 162, 70);
@@ -61,8 +64,11 @@
   .imgContainer {
     width: 40%;
   }
+  .innerContainer {
+    width: 90%;
+  }
   .container {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   .innerContainer p {
     font-size: 3rem;
@@ -72,9 +78,6 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .imgContainer {
-    width: 40%;
-  }
   .innerContainer p {
     font-size: 2.5rem;
   }
@@ -82,6 +85,8 @@
     font-size: 0.8rem;
   }
   .innerContainer {
+    padding-left: 0rem;
+    margin-top: 2rem;
     width: 90%;
   }
   .HeroText {
