@@ -16,10 +16,42 @@ const Hero = () => {
           </p>
         </div>
         <ul>
-          <li>LINKEDIN</li>
-          <li>WHATSAPP</li>
-          <li>GITHUB</li>
-          <li>INSTAGRAM</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/neeleshsharma06/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LINKEDIN
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/918769225506"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WHATSAPP
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/hellboyOO7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GITHUB
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/neelesh_sharma_0607"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              INSTAGRAM
+            </a>
+          </li>
         </ul>
       </div>
       <div className={style.imgContainer}>

@@ -16,11 +16,14 @@ const About = () => {
           solutions, enhancing problem-solving abilities, and committing to
           continuous learning.
         </p>
-        <button className={style.cvButton}>DOWNLOAD CV</button>
+        <a href="public\Neelesh Sharma.pdf" download="Neelesh Sharma CV">
+          <button className={style.cvButton}>DOWNLOAD CV</button>
+        </a>
       </div>
 
       <div className={style.imageContainer}>
         <iframe
+          loading="lazy"
           src="https://my.spline.design/robotfollowcursorforlandingpage-f3eb14d6951a0548d6271e31e7ba2001/"
           frameBorder="0"
           className={style.robot}
