@@ -6,16 +6,20 @@ const Hero = () => {
   return (
     <div className={style.container}>
       <div className={style.HeroText}>
-        <div className={style.innerContainer}>
+        <div
+          className={style.innerContainer}
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <span>
             <FiMinus /> HELLO WORLD
           </span>
           <p>
-            I am Neelesh, Motivated Front-End Developer with a strong passion
-            for creating responsive and user-friendly web applications.
+            I am Neelesh, Front-End Developer with a strong passion for creating
+            responsive and user-friendly web applications.
           </p>
         </div>
-        <ul>
+        <ul data-aos="fade-left" data-aos-duration="2000">
           <li>
             <a
               href="https://www.linkedin.com/in/neeleshsharma06/"
@@ -55,7 +59,13 @@ const Hero = () => {
         </ul>
       </div>
       <div className={style.imgContainer}>
-        <img loading="lazy" className={style.img} src="public\banner-bg.png" />
+        <img
+          loading="lazy"
+          className={style.img}
+          data-aos="fade-left"
+          data-aos-duration="500"
+          src="banner-bg.png"
+        />
       </div>
     </div>
   );

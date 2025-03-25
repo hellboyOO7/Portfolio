@@ -7,8 +7,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <header
-      // data-aos="fade-up"
-      // data-aos-duration="1000"
+      data-aos="fade-down"
+      data-aos-duration="500"
       className={style.header}
     >
       <div className={style.container}>

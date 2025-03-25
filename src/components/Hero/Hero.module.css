@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 .HeroText ul {
   right: 3%;
@@ -58,7 +58,7 @@
   font-family: "Times New Roman", Times, serif;
   color: white;
   margin-top: 1rem;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 
 @media screen and (max-width: 800px) {

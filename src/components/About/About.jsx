@@ -5,7 +5,11 @@ import { FiMinus } from "react-icons/fi";
 const About = () => {
   return (
     <div className={style.mainContainer}>
-      <div className={style.textContainer}>
+      <div
+        className={style.textContainer}
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <span>
           <FiMinus /> ABOUT
         </span>
@@ -23,6 +27,8 @@ const About = () => {
 
       <div className={style.imageContainer}>
         <iframe
+          data-aos="fade-left"
+          data-aos-duration="1000"
           loading="lazy"
           src="https://my.spline.design/robotfollowcursorforlandingpage-f3eb14d6951a0548d6271e31e7ba2001/"
           frameBorder="0"
