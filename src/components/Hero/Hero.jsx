@@ -4,7 +4,7 @@ import { FiMinus } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <div className={style.container}>
+    <section className={style.container} id="intro">
       <div className={style.HeroText}>
         <div
           className={style.innerContainer}
@@ -60,6 +60,7 @@ const Hero = () => {
       </div>
       <div className={style.imgContainer}>
         <img
+          alt="bannner-image"
           loading="lazy"
           className={style.img}
           data-aos="fade-left"
@@ -67,7 +68,7 @@ const Hero = () => {
           src="banner-bg.png"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

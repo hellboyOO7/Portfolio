@@ -5,22 +5,42 @@ import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(true);
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setIsOpen(true);
+    }
+  };
+  const closeHam = () => {
+    setIsOpen(true);
+  };
   return (
-    <header
+    <section
       data-aos="fade-down"
       data-aos-duration="500"
       className={style.header}
     >
       <div className={style.container}>
-        <p className={style.logo}>NEELESH.</p>
+        <a href="/" className={style.logo}>
+          <p>NEELESH.</p>
+        </a>
 
         <ul
+          onClick={handleOverlayClick}
           className={`${style.headerContainer} ${isOpen ? style.opened : ""}`}
         >
-          <li className={style.active}>INTRO</li>
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
-          <li>SAY HELLO</li>
+          <a href="#intro" onClick={closeHam}>
+            <li className={style.active}>INTRO</li>
+          </a>
+          <a href="#about" onClick={closeHam}>
+            <li>ABOUT</li>
+          </a>
+          <a href="#projects" onClick={closeHam}>
+            <li>PROJECTS</li>
+          </a>
+          <a href="#contact" onClick={closeHam}>
+            <li>SAY HELLO</li>
+          </a>
         </ul>
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -31,7 +51,7 @@ const Header = () => {
           </span>
         </button>
       </div>
-    </header>
+    </section>
   );
 };
 

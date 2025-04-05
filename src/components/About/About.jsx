@@ -4,7 +4,7 @@ import { FiMinus } from "react-icons/fi";
 
 const About = () => {
   return (
-    <div className={style.mainContainer}>
+    <section className={style.mainContainer} id="about">
       <div
         className={style.textContainer}
         data-aos="fade-right"
@@ -27,6 +27,7 @@ const About = () => {
 
       <div className={style.imageContainer}>
         <iframe
+          title="robot-image"
           data-aos="fade-left"
           data-aos-duration="1000"
           loading="lazy"
@@ -35,7 +36,7 @@ const About = () => {
           className={style.robot}
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 };
 
